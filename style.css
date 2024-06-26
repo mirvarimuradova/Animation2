@@ -1,0 +1,43 @@
+div{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    animation-name: divblock;
+    animation-duration: 5s;
+    position: absolute;
+    transform: rotate(0deg);
+    animation-iteration-count: infinite;
+}
+@keyframes divblock {
+    0%{
+        background-color: blue;
+        left: 0;
+        top: 40px;
+        transform: rotate(0deg);
+        transition-duration: 3s;
+    }
+    25%{
+        background-color: blanchedalmond;
+        left: 90%;
+        top: 40px;
+        transform: rotate(360deg);
+    }
+    50%{
+        background-color: yellowgreen;
+        top: 70%;
+        left: 90%;
+        transform: rotate(720deg);
+    }
+    75%{
+        background-color: orange;
+        left: 0;
+        top: 70%;
+        transform: rotate(1080deg);
+    }
+    100%{
+        background-color: blue;
+        top: 40px;
+        left: 0;
+        transform: rotate(1440deg);
+    }
+}
